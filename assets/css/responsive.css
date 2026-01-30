@@ -1648,12 +1648,13 @@
 
     .main-header-style1__bottom-inner {
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        gap: 31px;
     }
 
     .main-header-style1__bottom-right {
-        margin-top: 31px;
+        margin-top: 0;
     }
 
 
@@ -1708,7 +1709,7 @@
 
     .main-header-style1__bottom-inner {
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
     }
 

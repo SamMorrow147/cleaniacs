@@ -124,6 +124,7 @@
     transition-delay: 0.1s;
 }
 
+.single-service-style1:hover .text-box h3,
 .single-service-style1:hover .text-box h3 a {
     color: #ffffff;
 }

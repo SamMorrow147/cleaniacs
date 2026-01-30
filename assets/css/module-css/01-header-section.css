@@ -1156,7 +1156,7 @@
 .main-header-style1__top {
     position: relative;
     display: block;
-    background-color: var(--thm-gray-bg);
+    background-color: #e8f6fc;
     padding: 9px 0px 9px;
 }
 
@@ -1182,7 +1182,7 @@
 }
 
 .main-header-style1__top-left p a {
-    color: var(--thm-base);
+    color: #4A90D9;
     font-weight: 500;
 }
 
@@ -1265,13 +1265,49 @@
     padding: 28px 0px 28px;
 }
 
+/* Header sparkle effect - above logo, two colors (dark + light blue) */
+.header-sparkle-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: 15;
+}
+.header-sparkle-y {
+    position: absolute;
+    width: 100%;
+    height: 48px;
+    top: 0;
+    left: 0;
+    animation: hero-sparkle-y 5.5s steps(1) infinite;
+}
+.header-sparkle-x {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 0;
+    top: 0;
+    animation: hero-sparkle-x 3.5s steps(1) infinite;
+}
+.header-sparkle-pop {
+    display: block;
+    transform-origin: 50% 50%;
+    animation: hero-sparkle-pop 0.5s infinite linear;
+    width: 44px;
+    height: 44px;
+    margin: -22px 0 0 -22px;
+}
+
 .main-header-style1__bottom-inner {
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap: 40px;
     z-index: 10;
 }
 
@@ -1324,16 +1360,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px;
-    height: 50px;
-    background: rgba(var(--thm-base-rgb), .10);
-    border-radius: 50%;
 }
 
 .contact-info-box-style1 ul li .icon span {
     color: var(--thm-primary);
-    font-size: 25px;
-    line-height: 25px;
+    font-size: 36px;
+    line-height: 1;
 }
 
 .contact-info-box-style1 ul li .text {
