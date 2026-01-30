@@ -1718,18 +1718,24 @@
     }
 
     .main-header-style1__top-inner {
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
-    }
-
-
-    .main-header-style1__top {
-        padding: 14px 0px 20px;
+        flex-wrap: nowrap;
     }
 
     .main-header-style1__top-left {
-        margin-bottom: 8px;
+        flex-shrink: 1;
+        min-width: 0;
+        margin-bottom: 0;
+    }
+
+    .main-header-style1__top-right {
+        flex-shrink: 0;
+    }
+
+    .main-header-style1__top {
+        padding: 14px 0px 20px;
     }
 
     .main-menu-style1__right .box-search-style1 {
@@ -1871,8 +1877,8 @@
     }
 
     .main-slider-style1 .image-layer:before {
-        background-color: #ffffff;
-        opacity: 0.70;
+        background-color: transparent;
+        opacity: 0;
     }
 
     .main-slider .main-slider-content .big-title h2 {
